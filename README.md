@@ -25,6 +25,8 @@ There are no env requirements
 #### How to initialize/run your application (where applicable)
 
 - nodemon
+app.js is the primary JavaScript file for the server, and is located in the root folder.
+
 
 #### Features / Routes
 
