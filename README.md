@@ -10,7 +10,7 @@ Build a basic express server, and deploy it to AWS using GUI, and beanstalk CLI
 
 ### Links and Resources
 
-- [ci/cd]() (GitHub Actions)
+- [ci/cd](https://github.com/tm-LBenson/cloud-server/actions) (GitHub Actions)
 - [server-prod](http://d49cloudserver-env.eba-ykapze4m.us-east-1.elasticbeanstalk.com/)
 
 ### Setup
@@ -50,7 +50,7 @@ Create a user and assign new group to user
 Add AdministratorAccess-AWSElasticBeanstalk
 Add AWSCodeCommitFullAccess
 
-**********\_\_\_**********CLI********\_\_\_********
+****\*\*****\_\_\_****\*\*****CLI**\*\*\*\***\_\_\_**\*\*\*\***
 
 in terminal type aws configure
 
