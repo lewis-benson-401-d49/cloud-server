@@ -11,7 +11,8 @@ Build a basic express server, and deploy it to AWS using GUI, and beanstalk CLI
 ### Links and Resources
 
 - [ci/cd](https://github.com/tm-LBenson/cloud-server/actions) (GitHub Actions)
-- [server-prod](http://d49cloudserver-env.eba-ykapze4m.us-east-1.elasticbeanstalk.com/)
+- [server-prod-cli](http://d49cloudserver-env.eba-ykapze4m.us-east-1.elasticbeanstalk.com/)
+- [server-prod-upload-zip](https://d49-cloud-server-dev.us-east-1.elasticbeanstalk.com/)
 
 ### Setup
 
@@ -50,7 +51,7 @@ Create a user and assign new group to user
 Add AdministratorAccess-AWSElasticBeanstalk
 Add AWSCodeCommitFullAccess
 
-****\*\*****\_\_\_****\*\*****CLI**\*\*\*\***\_\_\_**\*\*\*\***
+\***\*\*\*\*\***\_\_\_\***\*\*\*\*\***CLI**\*\*\*\***\_\_\_**\*\*\*\***
 
 in terminal type aws configure
 
@@ -76,7 +77,7 @@ After making changes to server use eb deploy to apply changes.
 - GET : `/` - specific route to hit
 - GET : `/bad` - specific route to hit
 - GET : `/name?name=string` - specific route to hit (string can be replaced with a name)
-
+  - NOTE: The original path name for zip upload version is `/person` it was changed to `/name` to test the `eb deploy`
 - Feature two: Deploy with Beanstalk CLI
 
 #### Tests
