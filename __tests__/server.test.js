@@ -23,8 +23,8 @@ describe('API Server', () => {
     expect(response.status).toBe(500);
     expect(response.body.route).toEqual('/bad');
   });
-  it('works with query params and the "/person" route', async () => {
-    const response = await request.get('/person?name=Lewis');
+  it('works with query params and the "/name" route', async () => {
+    const response = await request.get('/name?name=Lewis');
     expect(response.status).toBe(200);
     expect(typeof (response)).toEqual('object');
   });
