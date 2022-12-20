@@ -10,8 +10,8 @@ Build a basic express server, and deploy it to AWS using GUI, and beanstalk CLI
 
 ### Links and Resources
 
-- [ci/cd]() (GitHub Actions)
-- [server-prod]()
+- [ci/cd](https://github.com/tm-LBenson/cloud-server/actions) (GitHub Actions)
+- [server-prod](http://d49cloudserver-env.eba-ykapze4m.us-east-1.elasticbeanstalk.com/)
 
 ### Setup
 
@@ -50,6 +50,8 @@ Create a user and assign new group to user
 Add AdministratorAccess-AWSElasticBeanstalk
 Add AWSCodeCommitFullAccess
 
+****\*\*****\_\_\_****\*\*****CLI**\*\*\*\***\_\_\_**\*\*\*\***
+
 in terminal type aws configure
 
 input access key and secret key for user permissions
@@ -63,7 +65,9 @@ type eb create in terminal
 
 press enter three times
 
-dont enable ANYTHING
+do not enable ANYTHING
+
+After making changes to server use eb deploy to apply changes.
 
 #### Features / Routes
 
@@ -71,7 +75,7 @@ dont enable ANYTHING
 
 - GET : `/` - specific route to hit
 - GET : `/bad` - specific route to hit
-- GET : `/people?name=string` - specific route to hit (string can be replaced with a name)
+- GET : `/name?name=string` - specific route to hit (string can be replaced with a name)
 
 - Feature two: Deploy with Beanstalk CLI
 
